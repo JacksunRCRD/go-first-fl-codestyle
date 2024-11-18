@@ -41,13 +41,13 @@ func defence(charName, charClass string) string {
 // обратите внимание на "if else" и на "else"
 func special(charName, charClass string) string {
 	if charClass == "warrior" {
-		fmt.Sprintf("%s применил специальное умение `Выносливость %d`", charName, 80+25)
+		return fmt.Sprintf("%s применил специальное умение `Выносливость %d`", charName, 80+25)
 	}
 	if charClass == "mage" {
-		fmt.Sprintf("%s применил специальное умение `Атака %d`", charName, 5+40)
+		return fmt.Sprintf("%s применил специальное умение `Атака %d`", charName, 5+40)
 	}
 	if charClass == "healer" {
-		fmt.Sprintf("%s применил специальное умение `Защита %d`", charName, 10+30)
+		return fmt.Sprintf("%s применил специальное умение `Защита %d`", charName, 10+30)
 	}
 	return "неизвестный класс персонажа"
 
